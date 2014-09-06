@@ -4,17 +4,17 @@ if (text.value!=='') {
 document.getElementById('err_text').innerHTML='';
 return text.value;} 
 else {
-document.getElementById('err_text').innerHTML='* Введіть текст події'; return false;}
+document.getElementById('err_text').innerHTML='(введіть текст події)'; return false;}
 }
 function submitform(){
 var text = textcheck();
 if (!!text){
 		var parent = document.getElementById('events');
 		var newElem = document.createElement('li');
-		newElem.innerHTML = 'Подія<!-- додати лічильник --><span id="tip">' + text + '</span>';
+		newElem.innerHTML = 'Подія<!-- додати лічильник --><span id="tip" class="tip">' + text + '</span>';
 		parent.appendChild(newElem);
 		document.getElementById('text').value='';
 		document.getElementById('err_text').innerHTML='';}
 
-else {document.getElementById('err_text').innerHTML='* Введіть текст події';}
+else {document.getElementById('err_text').innerHTML='(введіть текст події)';}
 }
