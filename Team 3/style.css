@@ -33,7 +33,7 @@ body{font-family:'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;font-s
      -o-transition: background-position ease-out 0.5s;
      transition: background-position ease-out 0.5s;
 }
-#events li:hover {border:1px solid #ee7829;cursor:pointer; background-position:160px 8px;content:"click to delete";}
+#events li:hover {border:1px solid #ee7829;cursor:pointer; background-position:160px 8px;}
 #events li:hover .tip{display:block;}
 .tip{display:none; position:absolute;left:100%;top:-1px;margin-left:10px;width:300px; border:1px solid #ee7829;padding:10px;min-height:30px;background:#fff;color:#666;text-align:left;}
 #events li span:before{content: "";position: absolute;left:-20px;top:8px;border-style:solid;border-width:10px;border-color:transparent #ee7829 transparent transparent;height: 0;width: 0;}
