@@ -9,7 +9,7 @@ document.getElementById('err_text').innerHTML='* Введіть текст по�
 function submitform(){
 var text = textcheck();
 if (!!text){
-		var parent = document.getElementById('new_event');
+		var parent = document.getElementById('events');
 		var newElem = document.createElement('li');
 		newElem.innerHTML = 'Подія<!-- додати лічильник --><span id="tip">' + text + '</span>';
 		parent.appendChild(newElem);
