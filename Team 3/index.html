@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<form name="form">
+<div class="text"><label>Введіть текст події<span id="err_text"></span></label>
+<textarea cols="70" rows="7" id="text" onblur="textcheck();"></textarea>
+</div>
+<input type="button" value="Додати" id="submit" onclick="submitform()" />
+</form>
+<ul id="new_event"></ul>
+</body>
