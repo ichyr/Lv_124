@@ -6,21 +6,8 @@ window.onload = function() {
 	var operator;
 
 	function calculate(operator, firstNumber, secondNumber) {
-		switch (operator) {
-			case "+":
-				return +firstNumber + +secondNumber;
-				break;
-			case "-":
-				return +firstNumber - secondNumber;
-				break;
-			case "*":
-				return firstNumber*secondNumber;
-				break;
-			case "/":
-				return firstNumber/secondNumber;
-				break;
-		}
-		
+		var abs = parseFloat(firstNumber+operator+secondNumber);
+		return abs;
 	}
 
 	calculator.onclick = function(e) {
@@ -38,13 +25,14 @@ window.onload = function() {
 		else if(target.className == "operator") {
 			if(!operator) {
 				operator = target.getAttribute("data-value");
-				display.innerHTML = "";
+				//display.innerHTML = "";
+				display.innerHTML+=operator;
 			}
 			else {
 				firstNumber = calculate(operator, firstNumber, secondNumber);
 				operator = target.getAttribute("data-value");
 				secondNumber = "";
-				display.innerHTML = "";
+				display.innerHTML+=operator;
 
 			}
 			
