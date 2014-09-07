@@ -1,33 +1,36 @@
 function submitform(){
-	var text = document.getElementById('text').value;
-	var actionCount, actionId ;
-	
-	if (text!==''){
-			var parent = document.getElementById('events');
-			var newElem = document.createElement('li');
-
-            actionCount =  parent.getElementsByTagName('li').length + 1;
-            actionId = randomizer(-9999, 9999) + "id";
-			newElem.innerHTML ='Подія ' +  actionCount + '<span class ="closeAction" id ="' + actionId + '"' + '> </span>' + '<span class="tip">' + text + '</span>';
-            parent.appendChild(newElem);
-			parent = document.getElementById(actionId);
-			parent.addEventListener("click", removeAction);
-			document.getElementById('text').value='';
-			document.getElementById('err_text').innerHTML='';
-	}
-	else {
-	  document.getElementById('err_text').innerHTML='(введіть текст події)';
+	var idString="_taskId_";
+	var textArea = document.getElementById('text');
+	var err_text = document.getElementById('err_text');
+	var text = textArea.value.trim();
+	var delId ;
+	if (!text.length){
+	  err_text.innerHTML='(введіть текст події)';
+	  return;
 	};
+
+	var parent = document.getElementById('events');
+	var actions =  parent.getElementsByTagName('li');
+	
+    var actionId = 1;
+	if (actions.length) {
+		actionId = +actions[actions.length-1].id.substring(idString.length)+1;
+	 }
+    var newElem = document.createElement('li');
+    newElem.setAttribute("id", idString+actionId);
+	newElem.innerHTML ='Подія ' +  actionId +
+	'<span class="tip">' + text + '</span>'+
+    '<span class ="closeAction" id ="' + actionId + '"' + '> </span>';
+    parent.appendChild(newElem);
+	parent = document.getElementById(actionId);
+	parent.addEventListener("click", removeAction);
+    textArea.value = '';
+    err_text.innerHTML='';
 };
 
 function removeAction(){
- var parent = document.getElementById('events');
- parent.removeChild(this.parentNode); 
+	var parent = document.getElementById('events');
+	parent.removeChild(this.parentNode); 
 };
 
-function randomizer(max, min) {
-   var rand = min - 0.5 + Math.random()*(max-min+1);
-   
-    rand = Math.round(rand);
-   return rand;
-};
+
