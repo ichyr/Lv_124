@@ -7,7 +7,7 @@ function Watch(){
        var hours = date.getHours();
        var minutes = date.getMinutes();
        var seconds = date.getSeconds();
-   //    alert(hours+":"+minutes+":"+seconds);
+ 
 
   
     hoursArrow.style.webkitTransform = 'rotate('+(hours+(minutes*1.6666666)/100)*30+'deg)'; 
@@ -29,4 +29,3 @@ function Watch(){
     secondsArrow.style.transform       = 'rotate('+seconds*6+'deg)'; 
     }
 
-    //setInterval(Watch, 1000);
