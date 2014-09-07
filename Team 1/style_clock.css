@@ -1,0 +1,128 @@
+body {
+       margin: 0;
+}
+.numbers {
+            width: 400px;
+            height: 400px;
+            border: 1px solid #333;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            margin: 50px auto 0 auto;
+            position: relative;
+}
+.numbers span {
+            font-family: 'Open Sans', sans-serif;
+		    font-weight: 300;
+            font-size: 30px;
+            color: #333;
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+}
+
+.numbers .num_1 {
+            left: 257px;
+            top: 33px;
+}
+.numbers .num_2 {
+            left: 320px;
+            top: 95px;
+}
+.numbers .num_3 {
+            right: 0;
+            top: 175px;
+}
+.numbers .num_4 {
+           left: 320px;
+            bottom: 95px;
+}
+.numbers .num_5 {
+            left: 257px;
+            bottom: 33px;
+}
+.numbers .num_6 {
+            bottom:0;
+            left: 175px;
+}
+.numbers .num_7 {
+              right: 257px;
+            bottom: 33px;
+}
+.numbers .num_8 {
+             right: 320px;
+            bottom: 95px;
+}
+.numbers .num_9 {
+             left: 0;
+            top: 175px;
+}
+.numbers .num_10 {
+            right: 320px;
+            top: 95px;
+}
+.numbers .num_11 {
+            right: 257px;
+            top: 33px;
+}
+.numbers .num_12 {
+            top: 0;
+            left: 175px;
+}
+
+.arrow {
+            background: #333;
+            position: absolute;
+            
+}
+#hours .arrow {
+            height:  120px;
+            width: 11px;
+           top: 115px;
+            left: 0;
+}
+#minutes .arrow {
+            height:  160px;
+             width: 5px;
+             left: 3px;
+             top: 75px;
+        }
+#seconds .arrow {
+            height:  210px;
+            width: 1px;
+            left: 5px;
+            top: 25px;
+        }
+#hours,#minutes,#seconds {
+            position: absolute;
+            height: 100%;
+            left: 195px;
+            width: 10px;
+			
+        }
+      
+.center {
+        width: 5px;
+        height: 5px;
+        background: #fff;
+        position: absolute;
+        z-index: 5;
+        top: 198px;
+        left:198px;
+         -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+         border-radius: 50%;
+        }
+.start {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 17px;
+background: #eee;
+border: 1px solid #bbb;
+padding: 4px 15px;
+cursor: pointer;
+}
