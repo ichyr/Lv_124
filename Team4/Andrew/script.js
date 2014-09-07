@@ -41,7 +41,7 @@ window.onload = function() {
 			if(!operator) {
 				if(target.getAttribute("data-value") == "sqr"){
 					sq = Math.sqrt(firstNumber);
-					display.innerHTML = sq;
+					firstNumber = display.innerHTML = sq;
 				}
 				else{
 					operator = target.getAttribute("data-value");
