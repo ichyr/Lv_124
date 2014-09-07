@@ -6,12 +6,26 @@ window.onload = function() {
 	var operator;
 
 	function calculate(operator, firstNumber, secondNumber) {
-		var abs = parseFloat(firstNumber+operator+secondNumber);
-		return abs;
+		switch (operator) {
+			case "+":
+				return +firstNumber + +secondNumber;
+				break;
+			case "-":
+				return +firstNumber - secondNumber;
+				break;
+			case "*":
+				return firstNumber*secondNumber;
+				break;
+			case "/":
+				return firstNumber/secondNumber;
+				break;
+		}
+		
 	}
 
 	calculator.onclick = function(e) {
 		var target = e && e.target || event.srcElement;
+		var sq = 0;
 		if(target.className == "number") {
 			if(!operator) {
 				display.innerHTML+= target.innerHTML;
@@ -23,17 +37,23 @@ window.onload = function() {
 			}
 		}
 		else if(target.className == "operator") {
+			
 			if(!operator) {
 				operator = target.getAttribute("data-value");
-				//display.innerHTML = "";
-				display.innerHTML+=operator;
+				display.innerHTML = "";
 			}
 			else {
-				firstNumber = calculate(operator, firstNumber, secondNumber);
-				operator = target.getAttribute("data-value");
-				secondNumber = "";
-				display.innerHTML+=operator;
-
+				
+				if(target.getAttribute("data-value") == "sqr"){
+					sq = Math.sqrt(firstNumber);
+					display.innerHTML = sq;
+				}
+				else{
+					firstNumber = calculate(operator, firstNumber, secondNumber);
+					operator = target.getAttribute("data-value");
+					secondNumber = "";
+					display.innerHTML = "";
+				}	
 			}
 			
 		}
