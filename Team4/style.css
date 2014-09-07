@@ -11,10 +11,10 @@ html {
 #calculator {
 	margin: 50px auto;
 	width: 300px;
-	background: #1e1e21;
 }
 .screen {
-	width: 205px;
+	margin-left: 3px;
+	width: 203px;
 	height: 36px;
 	padding-right: 10px;
 	text-align: right;
@@ -24,7 +24,7 @@ html {
 	font-family:arial;
 	font-size:15px;
 	font-weight:bold;
-	text-shadow:0px 1px 0px #263666;
+	text-shadow:0 0 10px #FFFFFF, 0 0 1px #FFFFFF;
 	border:1px solid #0b0e07;
 }
 .keys span,
@@ -59,6 +59,10 @@ html {
 	-moz-transition: box-shadow 0.5s ease-in-out;
 	-o-transition: box-shadow 0.5s ease-in-out;
 	transition: box-shadow 0.5s ease-in-out;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
 
 }
 .keys span:hover,
