@@ -44,6 +44,7 @@ window.onload = function() {
 			operator = "";
 		}
 		else if (target.className == "eval") {
+			if(!secondNumber) return;
 			firstNumber = display.innerHTML = calculate(operator, firstNumber, secondNumber);
 			secondNumber = "";
 			operator = "";

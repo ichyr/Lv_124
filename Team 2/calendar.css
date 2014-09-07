@@ -1,0 +1,109 @@
+body {
+	background-image: -ms-linear-gradient(right, #0C6613 0%, #BEF2A7 50%, #0E7316 100%);
+	background-image: -moz-linear-gradient(right, #0C6613 0%, #BEF2A7 50%, #0E7316 100%);
+	background-image: -o-linear-gradient(right, #0C6613 0%, #BEF2A7 50%, #0E7316 100%);
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #0C6613), color-stop(0.5, #BEF2A7), color-stop(1, #0E7316));
+	background-image: -webkit-linear-gradient(right, #0C6613 0%, #BEF2A7 50%, #0E7316 100%);
+	background-image: linear-gradient(to left, #0C6613 0%, #BEF2A7 50%, #0E7316 100%);
+}
+#calendar_wrapper {
+	width: 595px;
+	height: 500px;
+	margin: auto;
+}
+
+#allDate {
+	background: rgba(12,102,19,0.5);
+	width: 595px;
+	border-radius: 5px;
+	height: 65px;
+	color: white;
+	text-align: center;
+	line-height: 65px;
+	margin-top: 20px;
+}
+#current, #weekDay, #number, #todayMonth, #todayYear {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 32px;
+	height: 65;
+	margin-right: 15px;
+}
+
+#current {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+#m_y {
+	background: rgba(12,102,19,0.5);
+	width: 595px;
+	border-radius: 5px;
+	height: 65px;
+	font-size: 20px;
+	line-height: 60px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#forward_month {
+	margin-right: 100px;
+	cursor: pointer;
+}
+
+#month, #year {
+	text-align: center;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 5px;
+}
+
+#day, #calendar {
+	background: rgba(12,102,19,0.2);
+	height: 50px;
+	border-radius: 5px;
+	float: left;
+	width: 595px;
+	margin-top: 5px;
+}
+
+.week_day, .date, .today_day {
+	background: rgba(12,102,19,0.2);
+	float: left;
+	margin: 2px;
+	width: 67px;
+	border: 1px solid #34ac0a;
+	padding: 6px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+	line-height: 30px;
+	height: 30px;
+}
+
+#calendar {
+	min-height: 290px;
+}
+
+#back_month, #back_year, #forward_year{
+	cursor: pointer;
+}
+
+.today_day {
+	color: red;
+}
