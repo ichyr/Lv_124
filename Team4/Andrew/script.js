@@ -41,18 +41,20 @@ window.onload = function() {
 			if(!operator) {
 				if(target.getAttribute("data-value") == "sqr"){
 					sq = Math.sqrt(firstNumber);
-					display.innerHTML = sq;
+					firstNumber = display.innerHTML = sq;
 				}
 				else{
 					operator = target.getAttribute("data-value");
-					display.innerHTML = "";
+					//display.innerHTML = "";
+					display.innerHTML+= target.innerHTML;
 				}		
 			}
 			else {
 					firstNumber = calculate(operator, firstNumber, secondNumber);
 					operator = target.getAttribute("data-value");
 					secondNumber = "";
-					display.innerHTML = "";
+					//display.innerHTML = "";
+					display.innerHTML = firstNumber;
 				}
 		}
 		else if(target.className == "clear") {
