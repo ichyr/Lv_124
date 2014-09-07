@@ -45,14 +45,16 @@ window.onload = function() {
 				}
 				else{
 					operator = target.getAttribute("data-value");
-					display.innerHTML = "";
+					//display.innerHTML = "";
+					display.innerHTML+= target.innerHTML;
 				}		
 			}
 			else {
 					firstNumber = calculate(operator, firstNumber, secondNumber);
 					operator = target.getAttribute("data-value");
 					secondNumber = "";
-					display.innerHTML = "";
+					//display.innerHTML = "";
+					display.innerHTML = firstNumber;
 				}
 		}
 		else if(target.className == "clear") {
