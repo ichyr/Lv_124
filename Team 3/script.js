@@ -14,8 +14,3 @@ function submitform(){
 		document.getElementById('err_text').innerHTML='(введіть текст події)';
 	}
 }
-function remove(){
-	var elem = parentElem.this;
-	var parent= parentElem.elem;
-	parent.removeChild();
-}
