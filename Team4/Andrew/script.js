@@ -39,23 +39,21 @@ window.onload = function() {
 		else if(target.className == "operator") {
 			
 			if(!operator) {
-				operator = target.getAttribute("data-value");
-				display.innerHTML = "";
-			}
-			else {
-				
 				if(target.getAttribute("data-value") == "sqr"){
 					sq = Math.sqrt(firstNumber);
 					display.innerHTML = sq;
 				}
 				else{
+					operator = target.getAttribute("data-value");
+					display.innerHTML = "";
+				}		
+			}
+			else {
 					firstNumber = calculate(operator, firstNumber, secondNumber);
 					operator = target.getAttribute("data-value");
 					secondNumber = "";
 					display.innerHTML = "";
-				}	
-			}
-			
+				}
 		}
 		else if(target.className == "clear") {
 			display.innerHTML = "";
