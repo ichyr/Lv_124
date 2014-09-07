@@ -1,6 +1,8 @@
 body {
        margin: 0;
-	   background:rgba(230, 126, 34, 0.75);
+	   background:rgba(230, 126, 34, 0.2);
+	   font-family: 'Open Sans', sans-serif;
+	   font-weight: 600;
 }
 .numbers {
             width: 400px;
@@ -9,15 +11,15 @@ body {
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             border-radius: 50%;
-            margin: 50px auto 0 auto;
+            margin: 90px auto 0 auto;
             position: relative;
 			box-shadow:0px 5px 15px 5px gray;
-			background:rgb(231, 76, 60);
+			background:rgba(231, 76, 60, 0.4);
+			
 			
 }
 .numbers span {
-            font-family: 'Open Sans', sans-serif;
-		    font-weight: 600;
+ 
             font-size: 30px;
 			color: rgb(44, 62, 80);
             display: block;
@@ -124,8 +126,8 @@ body {
 display: block;
 margin-left: auto;
 margin-right: auto;
-margin-top: 30px;
-background: rgba(192, 57, 43, 0.8);
+margin-top: 60px;
+background: rgba(192, 57, 43, 0.7);
 padding: 4px 15px;
 cursor: pointer;
 box-shadow:0px 1px 4px 1px black;
@@ -134,8 +136,8 @@ border:1px solid rgba(192, 57, 43, 0.1)
 }
 
 .start:hover{
-background: rgba(192, 57, 43, 0.7);	
+background: rgba(192, 57, 43, 0.5);	
 }
 .start:active{
-background: rgb(192, 57, 43);	
+background: rgba(192, 57, 43, 0.7);	
 }
