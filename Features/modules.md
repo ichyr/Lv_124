@@ -1,6 +1,8 @@
 
 
-Опис сторінок у системі тестування
+### Опис сторінок у системі тестування
+
+---
 
 №
 Назва
@@ -14,7 +16,7 @@ As a Guest I need to
 See main page to be able to navigate
 See main page layout with to be able to change interface language at any time.
 
-2  Бобенко Андрій 
+2  Бабенко Андрій 
 Категорії
 Тіло твориться з великих піктограм – підкатегорій.
 See categories page to be able to look through their contents
