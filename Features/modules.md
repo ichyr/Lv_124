@@ -59,15 +59,18 @@ See sign up ( registration ) dialog I order to be able to become registered in t
 Контакти людей, відповідальних за систему: адміністратор, модератори.
 See contacts page of site administration, moderators etc. to be able to communicate with them.
 
+10 Писаренко Ірина
 Статистика тесту
 Сторінка з аналізом проходження тестів ( кількість разів , кількість разів по ступенях користувачів, розріз по отриманому результату )
 See statistics page for specific test to be interested with passing this test with top score.
 
+11 Успенський Іван
 Статистика під категорії/категорії
 Сторінка з аналізом проходження тестів ( кількість разів , кількість разів по ступенях користувачів, розріз по отриманому результату ) тільки результати агрегуються по всіх тестах відповідної сутності
 See statistics for specified test to be interested to become better.
 See general statistics for personal tests of some user.
 
+12 Філонич Татьяна
 Загальна статистика
 Сторінка з:
 Графіком в часі загального середнього результату
@@ -75,22 +78,22 @@ See general statistics for personal tests of some user.
 See general statistics to be able to research dig data.
 As a user I must see
 
-10 Писаренко Ірина  
+13 Багіров Олег  
 Особистий профіль
 Сторінка, де можна міняти власні дані. 
 Personal page to be able to look, edit personal information and delete my account.
 
-11 Успенський Іван
+14 Бобенко Андрій
 Профіль іншого користувача
 Сторінка де відображається частина власних даних (ім’я, станиця, курінь, улад, ступінь, гурток, **статус в системі, історія тестів)
 Profile of other user with relative to others information.
 
-12 Філонич Татьяна
+15  Буняк Анастасія
 Список власних тестів
 + Список, де можна побачити власні тести, біля них їх статус ( в розробці, затверджений, незатвереджний, потребує доопрацювання – при наявності коментаря). Можливість перейти до їх редагування чи вибрати – видалити тест. Саме тут є кнопка – додати тест.
 List of my own tests to be able to see their moderation status, get into statistics page of them, edit any test, filter through my tests, delete them and press add test button.
 
-13
+16  Веділн Андрій
 Створення нового тесту
 Сторінка створення власного тесту. Вибирається категорія, під категорія, назва тесту.
 Видимим є одне поля для ведення питання, де є місце для:
@@ -102,40 +105,40 @@ List of my own tests to be able to see their moderation status, get into statist
 Під цим є кнопка – додати питання, кнопка зберегти (є частина питань, потребує доопрацювання перед відправленням на перевірку), кнопка відправити на рецензію і кнопка вернутися.
 Page where I can create test to be able to add any number of question, any number of answers to them, specify any number of correct answers and finally save test, save and send for moderation or cancel creation of the test. Tests should have q/a, category, subcategory and tags.
 
-14
+17  Вітвіцький Олег
 Редагування власного тесту
 Фактично попередня сторінка, тільки за умови, що наявні ( збережені ) питання та інші речі там вже є відображені + поле коментаря згори ( від модератора, недоступне простому користувачеві )
 Page where I can edit my test in order to send it for review also I can see moderators recommendations history here.
 
-16
+18 Кикуш Олег
 Часті питання
 
 Page with FAQ in order not to bother admins/moderators.
 As a moderator I need to see
 
-17
+19 Лобанов Євген
 Тести для перевірки
 Вікно зі списком всіх нових або змінених тестів.
 Page with list of test for moderation in order to filter my category and check them.
 
-18
+20 Паберівська Наталя
 Перевірка тесту
 Вікно з можливістю переглядати тест (питання, варіанти відповіді, пояснення). По перегляді тест затверджується (відповідною кнопкою), або пишеться відповідний коментар та відправляється на доопрацювання. При наявності коментаря, кнопка затвердження є неактивною.
 Page where I can look through the test, edit it (q/a, category etc ), make moderators notes, publish it in my category or send it for revision.
 
-19
+21 Петровський Олег
 Менеджмент тестів (затверджених)
 Загальне вікно з фільтром категорії/під категорій/пошуком. Тест можна повністю редагувати, міняти категорію, під категорію.
 Page with ability to filter through all tests by categories etc. in order to edit them, change its category etc.
 As an administrator I need to see
 
-20
+22 Писаренко Ірина
 Менеджмент користувачів
 Список користувачів, з можливістю видалити, заблокувати, написати листа та перемінити статус ( користувач, модератор, адміністратор). Для модераторів вибрати категорії/під категорії, до яких вони мають відношення.
 Page with the list of users in order to filter, search and edit users in order to manage them, confirm etc.
 Dialog for user edit in order to mark him/her, confirm or edit personal information.
 
-21
+23 Успенський Іван
 Управління сайтом
 Перейменування заголовків категорії, під категорій, створення, завантаження резервних копій бази, виставлення періодичності збереження бази.
 Page with tabs to manage categories and subcategories, activation of db backup scripts, localization options, site static pages content, heading, footers content etc in order to have flexible site.
