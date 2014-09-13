@@ -1,40 +1,40 @@
-Feature: Computers category
+п»їFeature: Computers category
 
     Scenario:
 	
 	Given there is a list of three subcategories
 	When I click on one of these subcategories 
 	Then I should have an opportunity to choose one of the tests of this category:
-		| підкатегорія |
-		| підкатегорія |
-		| підкатегорія |
+		| РїС–РґРєР°С‚РµРіРѕСЂС–СЏ |
+		| РїС–РґРєР°С‚РµРіРѕСЂС–СЏ |
+		| РїС–РґРєР°С‚РµРіРѕСЂС–СЏ |
 
     Scenario:
 
-	Given first subcategory "Баскетбол"
+	Given first subcategory "Р‘Р°СЃРєРµС‚Р±РѕР»"
 	When I click on
 	Then I will have a list of 3 tests:
-		| Правила дорожнього руху1 |
+		| РџСЂР°РІРёР»Р° РґРѕСЂРѕР¶РЅСЊРѕРіРѕ СЂСѓС…Сѓ1 |
 		| Highway code             |
-		| Правила дорожнього руху2 |
+		| РџСЂР°РІРёР»Р° РґРѕСЂРѕР¶РЅСЊРѕРіРѕ СЂСѓС…Сѓ2 |
 	And I can pass any test 
 
     Scenario:
 
-	Given second subcategory "Хокей"
+	Given second subcategory "РҐРѕРєРµР№"
 	When I click on
 	Then I will have a list of 4 tests:
-		| Правила дорожнього руху1  |
+		| РџСЂР°РІРёР»Р° РґРѕСЂРѕР¶РЅСЊРѕРіРѕ СЂСѓС…Сѓ1  |
 		| Highway code              |
-		| Правила дорожнього руху2  |
-		| Правила дорожнього руху3  |
+		| РџСЂР°РІРёР»Р° РґРѕСЂРѕР¶РЅСЊРѕРіРѕ СЂСѓС…Сѓ2  |
+		| РџСЂР°РІРёР»Р° РґРѕСЂРѕР¶РЅСЊРѕРіРѕ СЂСѓС…Сѓ3  |
 	And I can pass any test 
 
     Scenario:
 
-	Given third subcategory "Футбол"
+	Given third subcategory "Р¤СѓС‚Р±РѕР»"
 	When I click on
 	Then I will have a list of 2 tests:
-		| Правила дорожнього руху1 |
+		| РџСЂР°РІРёР»Р° РґРѕСЂРѕР¶РЅСЊРѕРіРѕ СЂСѓС…Сѓ1 |
 		| Highway code             |
 	And I can pass any test 

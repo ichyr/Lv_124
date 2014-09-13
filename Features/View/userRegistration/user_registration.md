@@ -1,4 +1,4 @@
-Feature: User registration
+п»їFeature: User registration
 
     As a Guest I need to be able to use sign up ( registration ) dialog 
     I order to be able to become registered in the system and have my information present there
@@ -11,68 +11,68 @@ Feature: User registration
 
     Scenario:
 
-	Given button for registration "Реєстрація"
+	Given button for registration "Р РµС”СЃС‚СЂР°С†С–СЏ"
 	When I click on this button
 	Then I should see a home page
     
     Scenario:
 
-	Given button for registration cancel "Відмінити"
+	Given button for registration cancel "Р’С–РґРјС–РЅРёС‚Рё"
 	When I click on this button
 	Then I should see a home page
 
 
     Scenario: 
 
-	Given input field for a name "Ім'я"
+	Given input field for a name "Р†Рј'СЏ"
 	When I input a name 
 	Then there should be a name
 
    
     Scenario:
 
-	Given required input field for a username "Псевдо"
+	Given required input field for a username "РџСЃРµРІРґРѕ"
 	When I  input a username
 	Then there should be a nickname
 
     Scenario:
 
-	Given required input field for a password "Пароль"
+	Given required input field for a password "РџР°СЂРѕР»СЊ"
 	When I input a password
 	Then there should be correctly entered password
 
     Scenario:
 
-	Given input field for a plast region "Станиця"
+	Given input field for a plast region "РЎС‚Р°РЅРёС†СЏ"
 	When I input a name of the plast region
 	Then there should be the name of the plast region
 
     Scenario:
 
-	Given input field for plast hovel "Пластовий курінь"
+	Given input field for plast hovel "РџР»Р°СЃС‚РѕРІРёР№ РєСѓСЂС–РЅСЊ"
 	When I input a plast hoven
 	Then there should be a plast hoven 
  
     Scenario:
 
-	Given required input field for birth date "Дата народження"
+	Given required input field for birth date "Р”Р°С‚Р° РЅР°СЂРѕРґР¶РµРЅРЅСЏ"
 	When I input a day of birth or choose it in the calendar
 	Then there should be a day of birth
 
     Scenario:
 
-	Given drop-down list of plast degree "Пластовий ступінь"
+	Given drop-down list of plast degree "РџР»Р°СЃС‚РѕРІРёР№ СЃС‚СѓРїС–РЅСЊ"
 	When I choose a degree
 	Then there should be a degree I've chosen
   
     Scenario:
 
-	Given drop-down list of groups "Гурток"
+	Given drop-down list of groups "Р“СѓСЂС‚РѕРє"
 	When I choose a group
 	Then there should be a group name
 
     Scenario:
 
-	Given required input field for an e-mail "Е-меіл"
+	Given required input field for an e-mail "Р•-РјРµС–Р»"
 	When I input an e-mail
 	Then there should be correctly entered e-mail

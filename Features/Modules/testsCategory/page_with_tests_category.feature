@@ -1,12 +1,12 @@
-Feature: Categories list
+п»їFeature: Categories list
 
     As a guest I need to see list of categories
 	
     Scenario:
 	
 	Given there is list of three categories:
-		| Спорт      |
-		| Туризм     |
-		| Комп'ютери |
+		| РЎРїРѕСЂС‚      |
+		| РўСѓСЂРёР·Рј     |
+		| РљРѕРјРї'СЋС‚РµСЂРё |
 	When I click on one of the categories
 	Then I should see subcategories of certain category

@@ -1,4 +1,4 @@
-Feature: If I've already chosen a category and its subcategory, 
+ï»¿Feature: If I've already chosen a category and its subcategory, 
          I'll have had an opportunity to choose test and pass it.
  
     Scenario:
@@ -8,7 +8,7 @@ Feature: If I've already chosen a category and its subcategory,
 
     Scenario:
 
-	Given there is a green button under the questions "Ïğîéòè òåñò"
+	Given there is a green button under the questions "ĞŸÑ€Ğ¾Ğ¹Ñ‚Ğ¸ Ñ‚ĞµÑÑ‚"
 	When all answers are chosen
 	And the button is onclicked
 	Then there will be a result of the test evaluated in 100 points
