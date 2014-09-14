@@ -1,5 +1,5 @@
 Feature: Administration panel, list of administration 
-    If i logged as a user i do not have permission to open this page
+    If i logged as a authorised user i do not have permission to open this page
     I can see this page only if i logged as administrator
     I can add or remove administration privileges for accounts
     And i can remove account
@@ -35,7 +35,7 @@ Feature: Administration panel, list of administration
         Then i see moderator status on list of administration and moderator privileges users
         
     Scenario: Changing moderator  status to administrator
-        Given i push on button "Change status" 
+        Given i push on button "Change status"
         When i see pop-up with information about user which i want to change status
         And drop-down list where i can choose new status of user 
         And captcha with text input 
@@ -48,7 +48,7 @@ Feature: Administration panel, list of administration
     Scenario: Changing moderator or administrator status to authorised user
         Given i located on Administration panel, list of administration bookmark
         And i logged in as administrator
-        And i push on button "Change status"  
+        And i push on button "Change status" 
         When i see pop-up with information about user which i want to change status
         And drop-down list where i can choose new status of user 
         And captcha with text input 
