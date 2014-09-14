@@ -24,38 +24,38 @@ Feature: Administration panel, list of administration
         Then i see 404 page
         
      Scenario: Changing administrator status to moderator
-        Given i push on button change_status 
+        Given i push on button "Change status" 
         When i see pop-up with information about user which i want to change status
         And drop-down list where i can choose new status of user 
         And captcha with text input 
-        And yes, no buttons
+        And "Yes", "No" buttons
         And i choose moderator status from drop-down list
         And enter number from captcha to text input 
-        And push yes button
+        And push "Yes" button
         Then i see moderator status on list of administration and moderator privileges users
         
     Scenario: Changing moderator  status to administrator
-        Given i push on button change_status 
+        Given i push on button "Change status" 
         When i see pop-up with information about user which i want to change status
         And drop-down list where i can choose new status of user 
         And captcha with text input 
-        And yes, no buttons
+        And "Yes", "No" buttons
         And i choose administrator status from drop-down list
         And enter number from captcha to text input 
-        And push yes button
+        And push "Yes" button
         Then i see administrator status on list of administration and moderator privileges users
         
     Scenario: Changing moderator or administrator status to authorised user
         Given i located on Administration panel, list of administration bookmark
         And i logged in as administrator
-        And i push on button change_status 
+        And i push on button "Change status"  
         When i see pop-up with information about user which i want to change status
         And drop-down list where i can choose new status of user 
         And captcha with text input 
-        And yes, no buttons
+        And "Yes", "No" buttons
         And i choose authorised user status from drop-down list
         And enter number from captcha to text input 
-        And push yes button
+        And push "Yes" button
         Then i don't see authorised user status on list of administration and moderator privileges users
         
     Scenario: Deleting users accounts
@@ -65,8 +65,8 @@ Feature: Administration panel, list of administration
         When i see pop-up with information about user which i want to change status
         And drop-down list where i can choose new status of user 
         And captcha with text input 
-        And yes, no buttons
+        And "Yes", "No" buttons
         And i enter number from captcha to text input 
-        And push yes button 
+        And push "Yes" button 
         Then i see administration panel, list of administration bookmark without user that i deleted
         
