@@ -1,10 +1,10 @@
-Feature: Subcategory page with ability to find specific test
-  As a guest I need to see search results of subcategory tests 
-  and to be able to find specific test 
-  using search and using alphabet or date filter.
+	Feature: Subcategory page with ability to find specific test
+  	As a guest I need to see search results of subcategory tests, 
+  	and to be able to find specific test 
+  	using search and using alphabet or date filter.
   
   
-  Scenario: Subcategory page 
+ 	Scenario: Subcategory page 
     Given guest on the "Category" page
     When I click "Subcategory" link
     Then I get to "Subcategory" page
@@ -12,7 +12,7 @@ Feature: Subcategory page with ability to find specific test
     And page contains "Filer field", "Search field", "Page-selector of results "
 
     
-  Scenario: Filter field view
+  	Scenario: Filter field view
     Given Filter field contains "Сортування по" and drop-down list
     When  I click drop-down list
     Then I can see two drop-down options

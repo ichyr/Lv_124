@@ -1,8 +1,8 @@
-Feature: List of user's tests 
-  As a user I need to see tests moderation status, 
-  get into statistics page of them, edit any test, 
-  filter through my tests, 
-  delete them and press add test button.
+	Feature: List of user's tests 
+  	As a user I need to see tests moderation status, 
+  	get into statistics page of them, edit any test, 
+  	filter through my tests, 
+  	delete them and press add test button.
 
   
   
