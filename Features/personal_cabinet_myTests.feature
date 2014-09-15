@@ -10,19 +10,19 @@ Feature: Personal cabinet
 	Scenario: Published tests
 	    And I click on "Опубліковані"
 	    Then I should see the list of my published tests in table:
-	     | Назва тесту    | Категорія             | Підкатегорія ...|
+	    | Назва тесту    | Категорія             | Підкатегорія     |
 		
 	Scenario: Unfinished tests
 	    And I click on "Недопрацьовані
 	    Then I should see the list of my unfinished tests in table:
-	     | Назва тесту    | Категорія             | Підкатегорія ...|
+	     | Назва тесту    | Категорія             | Підкатегорія     |
 
 	Scenario: Unapproved tests
 	    And I click on "Незатверджені"
 	    Then I should see the list of my Unapproved tests in table:
-	     | Назва тесту    | Категорія             | Підкатегорія ...|
+	     | Назва тесту    | Категорія             | Підкатегорія     |
 
 	Scenario: Сreated tests
 	    And I click on "Створені"
 	    Then I should see the list of all my created tests in table:
-	     | Назва тесту    | Категорія             | Підкатегорія ...|
+	     | Назва тесту    | Категорія             | Підкатегорія      |
